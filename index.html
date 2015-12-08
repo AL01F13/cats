@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GATOS</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/gatos.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Gatos</h1>
+</div>
+
+<div>
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#" id="boton1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consulta "gatos"</h2>
+<p>Lista de los gatos</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#PaginaMII" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consulta "raza"</h2>
+<p>Muestra los gatos según su raza</p>
+</a>
+</li>
+
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+</div>
+</div>
+
+<!-- consulta gatos-->
+<div data-role="page" id="PaginaMI"  data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Gatos</h1>
+</div>
+<div data-role="main" class="ui-content">
+ <div id="contenido">
+ </div>
+</div>
+</div>
+</div>
+<!-- fin consulta gatos-->
+
+<!-- consulta raza-->
+<div data-role="page" id="PaginaMII" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h2>Escribe la raza que deseas buscar</h2>
+</div>
+<div data-role="main" class="ui-content">
+<a href="#gatos" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Caracter</a>
+<a href="#raza" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Raza</a>
+</div>
+</div>
+</div>
+<!-- fin consulta raza-->
+
+<!-- gatos -->
+<div data-role="page" id="gatos" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CARACTER</h1>
+</div>
+<div data-role="main" class="ui-content">
+<h3>Escribe el tipo de caracter del gato que quieres buscar:</h3>
+<input id="txtnombre" type="text" >
+<a href="#" id="btn_pro" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Buscar Gato</a>
+ <div id="contenidopro">
+ </div>
+</div>
+</div>
+</div>
+<!-- fin  mostrar gatos-->
+
+<!-- mostrar raza -->
+<div data-role="page" id="raza" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>RAZA</h1>
+</div>
+<div data-role="main" class="ui-content">
+<h3>Escribe la raza del gato que deseas buscar:</h3>
+<input id="txtmarca" type="text">
+<a href="#" id="btn_marca" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Buscar Raza</a>
+ <div id="contenidomar">
+ </div>
+</div>
+</div>
+</div>
+<!-- fin  mostrar raza-->
+
+</body>
+</html>
